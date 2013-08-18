@@ -1,0 +1,29 @@
+#Name: display.asm
+#Description: This displays the 9 letter word in a box
+
+	.text		
+printInstructions:
+	la 	$a0, directionsText1
+	li 	$v0, 4
+	syscall
+	
+	la 	$a0, directionsText2
+	syscall
+	la 	$a0, directionsText3
+	syscall
+	la 	$a0, directionsText4
+	syscall
+	la 	$a0, directionsText5
+	syscall
+	la 	$a0, directionsText6
+	syscall
+	la 	$a0, directionsText7
+	syscall
+	la 	$a0, directionsText8
+	syscall
+	la 	$a0, directionsText9
+	syscall
+	la 	$a0, directionsText10
+	syscall
+	
+	jr $ra
